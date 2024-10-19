@@ -63,26 +63,34 @@
 					  
 					  <style>
 						.image {
-						  width: 100%; /* O contêiner da imagem ocupa toda a largura disponível */
-						  overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
+						  display: flex; /* Usa Flexbox para centralizar a imagem */
+						  justify-content: center; /* Centraliza a imagem horizontalmente */
+						  align-items: center; /* Centraliza a imagem verticalmente */
+						  width: 100%;
+						  height: auto; /* Garante que o contêiner se ajuste */
+						  overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
 						}
 					  
 						.image img {
-						  width: 100%; /* A imagem ocupa toda a largura do contêiner */
-						  height: auto; /* Mantém a proporção da imagem */
-						  object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorcer */
-						  display: block; /* Remove qualquer espaço em branco abaixo da imagem */
+						  max-width: 100%; /* A imagem não pode ultrapassar a largura da tela */
+						  height: auto; /* Mantém a proporção correta da imagem */
+						  object-fit: contain; /* Faz com que a imagem seja ajustada para caber dentro do contêiner sem cortes */
+						  display: block; /* Remove espaçamentos extras */
 						}
 					  
 						@media screen and (max-width: 480px) {
+						  .image {
+							height: auto; /* Para telas menores, garante que o contêiner se ajuste */
+						  }
+					  
 						  .image img {
-							object-fit: contain; /* Evita cortes em telas pequenas, ajustando toda a imagem dentro do contêiner */
-							max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
-							height: auto; /* Ajusta a altura mantendo a proporção */
+							width: 100%; /* Ajusta a imagem para preencher o contêiner */
+							height: auto; /* Mantém a proporção da imagem */
 						  }
 						}
 					  </style>
 					  
+			
 					  
 				</section>
 				<!-- Content -->

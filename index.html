@@ -56,29 +56,33 @@
 							Inoltre, troverai le mie esperienze professionali, competenze, strumenti e i 
 							principali concetti applicati all'Analisi dei Dati.<br /> Sentiti libero/a di contattarmi tramite i link disponibili alla fine della pagina.</p>
 					</div>
+					
 					<span class="image object">
 						<img src="images/profile_picture2.jpg" alt="Profile Picture" />
 					  </span>
 					  
 					  <style>
 						.image {
-						  width: 100%; /* Garante que o contêiner da imagem ocupe toda a largura disponível */
+						  width: 100%; /* O contêiner da imagem ocupa toda a largura disponível */
 						  overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
 						}
 					  
 						.image img {
-						  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+						  width: 100%; /* A imagem ocupa toda a largura do contêiner */
 						  height: auto; /* Mantém a proporção da imagem */
-						  object-fit: cover; /* Evita que a imagem seja distorcida */
+						  object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorcer */
 						  display: block; /* Remove qualquer espaço em branco abaixo da imagem */
 						}
 					  
 						@media screen and (max-width: 480px) {
 						  .image img {
-							object-fit: contain; /* Ajusta a imagem para se adaptar sem corte em telas pequenas */
+							object-fit: contain; /* Evita cortes em telas pequenas, ajustando toda a imagem dentro do contêiner */
+							max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+							height: auto; /* Ajusta a altura mantendo a proporção */
 						  }
 						}
 					  </style>
+					  
 					  
 				</section>
 				<!-- Content -->

@@ -57,8 +57,27 @@
 							principali concetti applicati all'Analisi dei Dati.<br /> Sentiti libero/a di contattarmi tramite i link disponibili alla fine della pagina.</p>
 					</div>
 					<span class="image object">
-						<img src="images/profile_picture2.jpg" alt="" />
-					</span>
+						<img src="images/profile_picture2.jpg" alt="Profile Picture" />
+					  </span>
+					  
+					  <style>
+						.image {
+						  width: 100%; /* Garante que o contêiner da imagem ocupe toda a largura disponível */
+						  overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
+						}
+					  
+						.image img {
+						  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+						  height: auto; /* Mantém a proporção da imagem */
+						  display: block; /* Remove qualquer espaço em branco abaixo da imagem */
+						}
+					  
+						@media screen and (max-width: 480px) {
+						  .image {
+							/* Ajustes específicos para telas pequenas, se necessário */
+						  }
+						}
+					  </style>
 				</section>
 				<!-- Content -->
 				<section>

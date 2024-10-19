@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <!--
 	Editorial by HTML5 UP
@@ -63,31 +64,34 @@
 					  
 					  <style>
 						.image {
-						  display: flex; /* Usa Flexbox para centralizar a imagem */
-						  justify-content: center; /* Centraliza a imagem horizontalmente */
-						  align-items: center; /* Centraliza a imagem verticalmente */
-						  width: 100%;
-						  height: auto; /* Garante que o contêiner se ajuste */
-						  overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
-						}
-					  
-						.image img {
-						  max-width: 100%; /* A imagem não pode ultrapassar a largura da tela */
-						  height: auto; /* Mantém a proporção correta da imagem */
-						  object-fit: contain; /* Faz com que a imagem seja ajustada para caber dentro do contêiner sem cortes */
-						  display: block; /* Remove espaçamentos extras */
-						}
-					  
-						@media screen and (max-width: 480px) {
-						  .image {
-							height: auto; /* Para telas menores, garante que o contêiner se ajuste */
-						  }
-					  
-						  .image img {
-							width: 100%; /* Ajusta a imagem para preencher o contêiner */
-							height: auto; /* Mantém a proporção da imagem */
-						  }
-						}
+    d
+
+.image {
+    display: flex; /* Usa Flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    width: 100%; /* Ocupa toda a largura do contêiner pai */
+    height: auto; /* Garante que o contêiner se ajuste ao conteúdo */
+    /* Removido overflow: hidden; para evitar cortes */
+}
+
+.image img {
+    max-width: 100%; /* A imagem não pode ultrapassar a largura da tela */
+    height: auto; /* Mantém a proporção correta da imagem */
+    object-fit: contain; /* Ajusta a imagem para caber dentro do contêiner sem cortes */
+    display: block; /* Remove espaçamentos extras */
+}
+
+@media screen and (max-width: 480px) {
+    .image {
+        height: auto; /* Para telas menores, garante que o contêiner se ajuste */
+    }
+
+    .image img {
+        width: 100%; /* Ajusta a imagem para preencher o contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
 					  </style>
 					  
 			

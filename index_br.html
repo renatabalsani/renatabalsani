@@ -286,131 +286,128 @@
    
   <style>
 
-
-/* Inicio Bandeiras */
-
-.language-switcher {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.language-switcher li {
-    display: inline-block;
-}
-
-.language-switcher img {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-}
-
-/* Fim Bandeiras */
-
-	.carousel {
-	  position: relative;
-	  max-width: 100%;
-	  overflow: hidden;
+	/* Inicio Bandeiras */
+	.language-switcher {
+		list-style: none;
+		display: flex;
+		gap: 10px;
+		margin-top: 10px;
 	}
-  
-	.carousel-inner {
-	  display: flex;
-	  transition: transform 0.5s ease-in-out;
+	
+	.language-switcher li {
+		display: inline-block;
 	}
-  
-	.carousel-item {
-	  min-width: 100%;
-	  display: none; /* Esconde todos inicialmente */
+	
+	.language-switcher img {
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
 	}
-  
-	.project-grid {
-	  display: flex;
-	  justify-content: space-between;
-	}
-  
-	.project-grid article {
-	  width: 32%;
-	  box-sizing: border-box;
-	}
-  
-	.carousel img {
-	  width: 100%;
-	}
-  
-	.prev, .next {
-	  cursor: pointer;
-	  position: absolute;
-	  top: 50%;
-	  width: auto;
-	  padding: 16px;
-	  color: white;
-	  font-weight: bold;
-	  font-size: 18px;
-	  transition: 0.6s ease;
-	  border-radius: 3px;
-	  user-select: none;
-	  background-color: #3f2b96; /* Cor da caixinha */
-	}
-  
-	/* Afastar as setas das imagens */
-	.prev {
-	  left: -60px; /* Ajuste para afastar mais a seta da imagem */
-	}
-  
-	.next {
-	  right: -60px; /* Ajuste para afastar mais a seta da imagem */
-	}
-  
-	.prev:hover, .next:hover {
-	  background-color: #3f2b96; /* Cor ao passar o mouse sobre a seta */
-	}
-  
-	/* Setas em cor branca */
-	.prev::after, .next::after {
-	  color: white; /* Cor das setas */
-	}
-  
-	.dot-container {
-	  text-align: center;
-	  padding: 10px 0;
-	}
-  
-	.dot {
-	  cursor: pointer;
-	  height: 15px;
-	  width: 15px;
-	  margin: 0 2px;
-	  background-color: #bbb;
-	  border-radius: 50%;
-	  display: inline-block;
-	  transition: background-color 0.6s ease;
-	}
-  
-	.dot.active {
-	  background-color: #717171;
-	}
-  
-	/* Caixinha Saiba mais */
-	.saiba-mais-container {
-	  text-align: center;
-	  margin-top: 10px;
-	}
-  
-	.saiba-mais {
-	  display: inline-block;
-	  padding: 10px 20px;
-	  background-color: #3f2b96;
-	  color: white;
-	  text-decoration: none;
-	  border-radius: 5px;
-	  font-weight: bold;
-	}
-  
-	.saiba-mais:hover {
-	  background-color: #5145a5;
-	}
-  </style>
+	/* Fim Bandeiras */
+	
+		.carousel {
+		  position: relative;
+		  max-width: 100%;
+		  overflow: hidden;
+		}
+	  
+		.carousel-inner {
+		  display: flex;
+		  transition: transform 0.5s ease-in-out;
+		}
+	  
+		.carousel-item {
+		  min-width: 100%;
+		  display: none; /* Esconde todos inicialmente */
+		}
+	  
+		.project-grid {
+		  display: flex;
+		  justify-content: space-between;
+		}
+	  
+		.project-grid article {
+		  width: 32%;
+		  box-sizing: border-box;
+		}
+	  
+		.carousel img {
+		  width: 100%;
+		}
+	  
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 3px;
+		  user-select: none;
+		  background-color: #3f2b96; /* Cor da caixinha */
+		}
+	  
+		/* Afastar as setas das imagens */
+		.prev {
+		  left: -60px; /* Ajuste para afastar mais a seta da imagem */
+		}
+	  
+		.next {
+		  right: -60px; /* Ajuste para afastar mais a seta da imagem */
+		}
+	  
+		.prev:hover, .next:hover {
+		  background-color: #3f2b96; /* Cor ao passar o mouse sobre a seta */
+		}
+	  
+		/* Setas em cor branca */
+		.prev::after, .next::after {
+		  color: white; /* Cor das setas */
+		}
+	  
+		.dot-container {
+		  text-align: center;
+		  padding: 10px 0;
+		}
+	  
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+	  
+		.dot.active {
+		  background-color: #717171;
+		}
+	  
+		/* Caixinha Saiba mais */
+		.saiba-mais-container {
+		  text-align: center;
+		  margin-top: 10px;
+		}
+	  
+		.saiba-mais {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #3f2b96;
+		  color: white;
+		  text-decoration: none;
+		  border-radius: 5px;
+		  font-weight: bold;
+		}
+	  
+		.saiba-mais:hover {
+		  background-color: #5145a5;
+		}
+	  </style>
   
   <!-- JavaScript -->
   <script>

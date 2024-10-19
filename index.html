@@ -69,15 +69,17 @@
 						.image img {
 						  width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
 						  height: auto; /* Mantém a proporção da imagem */
+						  object-fit: cover; /* Evita que a imagem seja distorcida */
 						  display: block; /* Remove qualquer espaço em branco abaixo da imagem */
 						}
 					  
 						@media screen and (max-width: 480px) {
-						  .image {
-							/* Ajustes específicos para telas pequenas, se necessário */
+						  .image img {
+							object-fit: contain; /* Ajusta a imagem para se adaptar sem corte em telas pequenas */
 						  }
 						}
 					  </style>
+					  
 				</section>
 				<!-- Content -->
 				<section>
